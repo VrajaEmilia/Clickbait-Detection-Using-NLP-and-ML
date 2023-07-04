@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Roboto&family=Wix+Madefor+Display:wght@400;500&display=swap');
+
+body {
+  margin: 0;
+   font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  font-family: 'Wix Madefor Display', sans-serif;
+}
+
+code {
+
+}
+
+:root {
+    --black: rgba(0, 0, 0, 0.88);
+    --white: rgb(246, 244, 233);
+}

@@ -1,0 +1,57 @@
+.prediction-container{
+    display: flex;
+    height: 700px;
+    background-color: aqua;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 280px;
+    background: url(/src/assets/prediction.png) left bottom no-repeat, url(/src/assets/prediction2.png) 99% 20% no-repeat;
+    background-size: 250px, 300px;
+}
+.section1{
+}
+.prediction-h3{
+    font-size: 35px;
+    font-weight: 400;
+    color:var(--black);
+    letter-spacing: 0.2mm;
+}
+.searchbar{
+    display: grid;
+    grid-template-columns: 1.9fr 0.1fr; 
+    height: 40px;
+}
+.bar{
+    border: black 4px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    padding: 12px;
+    background-color: var(--white);
+}
+.button{
+    border: 0;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-image: url(../assets/search-icon.png);
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+
+.prediction-h5{
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: 400;
+    color:var(--black);
+    letter-spacing: 0.2mm;
+    text-align: center;
+}
+
+.circular-progress{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

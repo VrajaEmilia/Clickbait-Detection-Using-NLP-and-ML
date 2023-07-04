@@ -1,0 +1,45 @@
+.about-container{
+  display: grid; 
+  grid-template-columns: 1.1fr 0.9fr; 
+  gap: 0px 0px; 
+  height: 700px;
+  margin-top: 80px;
+  color:var(--black);
+  z-index:-1;
+  overflow:auto;
+  width: 100%;
+}
+.about-text{
+    display: flex;
+    margin: 0;
+    padding: 50px 50px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.about-illustration{
+    display: flex;
+    margin:0;
+    align-items: center;
+    justify-content: center;
+}
+h2,h3{
+    letter-spacing: 0.2mm;
+    word-spacing: 0.5mm;
+}
+h2{
+    margin-bottom: 0px;
+    font-size: 35px;
+}
+.illustration{
+    height:600px;
+    width: auto;
+}
+.about-paragraph{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.about-paragraph-2{
+  font-size: 18px;
+}

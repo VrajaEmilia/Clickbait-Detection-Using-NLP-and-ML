@@ -1,0 +1,48 @@
+.navbar-container{
+  position: fixed;
+  top:0px;
+  width: 100%;
+  display: flex;
+  height: 80px;
+  z-index:10;
+  background:inherit;
+}
+.navbar-container > ul
+		{
+      width: 100%;
+      display: flex;
+			margin: 0px;
+			padding: 0px;
+      justify-content: space-around;
+      align-items: center;
+		}
+			.navbar-container > ul li
+			{
+				display: inline-block;
+			}
+			.navbar-container > ul li a
+			{
+				text-decoration: none;
+				color: var(--black);
+				display: inline-block;
+				text-align: center;
+				padding: 36px 20px;
+        font-size: 20px;
+        letter-spacing: 0.5mm;
+				font-weight: 800;
+				position: relative;
+			}
+			.navbar-container > ul li a::before {
+    background: var(--black) none repeat scroll 0 0;
+    bottom: -2px;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    transition: 0.5s;
+}
+	.navbar-container > ul li a:hover::before
+	{
+		width: 100%;
+	}
