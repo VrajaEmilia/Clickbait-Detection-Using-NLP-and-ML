@@ -13,10 +13,10 @@ function ClickbaitDetectionSection() {
     return new Promise( res => setTimeout(res, delay) );
   }
   const getPrediction = async () =>{
-    if(headline!=""){
-    setPrediction(undefined)
     if (!searchButtonClicked)
       setSearchButtonClicked(true)
+    if(headline!=""){
+    setPrediction(undefined)
     await timeout(1000);
     setPrediction(await makePrediction(headline, chosenModel))
     }
