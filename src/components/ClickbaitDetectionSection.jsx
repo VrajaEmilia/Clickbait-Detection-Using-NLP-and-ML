@@ -13,10 +13,10 @@ function ClickbaitDetectionSection() {
     return new Promise( res => setTimeout(res, delay) );
   }
   const getPrediction = async () =>{
-    if (!searchButtonClicked)
-      setSearchButtonClicked(true)
     if(headline!=""){
     setPrediction(undefined)
+    if (!searchButtonClicked)
+      setSearchButtonClicked(true)
     await timeout(1000);
     setPrediction(await makePrediction(headline, chosenModel))
     }
@@ -31,7 +31,7 @@ function ClickbaitDetectionSection() {
                 <button className='button' onClick={getPrediction}/>
             </div>
         </div>
-        {(searchButtonClicked) &&
+        {(searchButtonClicked && headline==!"") &&
         <div>
         {prediction?
           <h5 className='prediction-h5'>Headline likely is: <span>{prediction}</span></h5>
