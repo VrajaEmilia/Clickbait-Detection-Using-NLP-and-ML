@@ -8,8 +8,6 @@
     background: url(/src/assets/prediction.png) left bottom no-repeat, url(/src/assets/prediction2.png) 99% 20% no-repeat;
     background-size: 250px, 300px;
 }
-.section1{
-}
 .prediction-h3{
     font-size: 35px;
     font-weight: 400;
@@ -22,7 +20,7 @@
     height: 40px;
 }
 .bar{
-    border: black 4px;
+    border:solid black 1px;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     font-family: 'Wix Madefor Display', sans-serif;
@@ -30,7 +28,7 @@
     background-color: var(--white);
 }
 .button{
-    border: 0;
+    border:solid black 1px;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     background-image: url(../assets/search-icon.png);
@@ -39,6 +37,9 @@
     background-repeat: no-repeat;
 }
 
+#error{
+    border:solid red 1px;
+}
 .prediction-h5{
     margin-top: 50px;
     font-size: 25px;
@@ -54,4 +55,7 @@
     align-items: center;
     justify-content: center;
 
+}
+#red{
+     border: red 4px;
 }

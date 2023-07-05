@@ -13,11 +13,13 @@ function ClickbaitDetectionSection() {
     return new Promise( res => setTimeout(res, delay) );
   }
   const getPrediction = async () =>{
-    setPrediction(undefined)
     if (!searchButtonClicked)
       setSearchButtonClicked(true)
+    if(headline!=""){
+    setPrediction(undefined)
     await timeout(1000);
     setPrediction(await makePrediction(headline, chosenModel))
+    }
   }
   return (
     <div className='prediction-container' id='prediction'>
@@ -25,11 +27,11 @@ function ClickbaitDetectionSection() {
             <ModelSelection setChosenModel={setChosenModel}/>
             <h3 className='prediction-h3'>Enter a headline to make a prediction:</h3>
             <div className='searchbar'>
-                <input className='bar' type='text' onChange={(e)=>setHeadline(e.target.value)}/>
+                <input className='bar' type='text' id={(searchButtonClicked && headline=="")? "error" : ""} onChange={(e)=>setHeadline(e.target.value)}/>
                 <button className='button' onClick={getPrediction}/>
             </div>
         </div>
-        {searchButtonClicked &&
+        {(searchButtonClicked) &&
         <div>
         {prediction?
           <h5 className='prediction-h5'>Headline likely is: <span>{prediction}</span></h5>
